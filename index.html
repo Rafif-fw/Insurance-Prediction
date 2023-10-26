@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Insurance Cost Predictor</title>
+</head>
+<body>
+    <h1>Health Insurance Cost Predictor</h1>
+    <form method="POST" action="/predict">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required><br>
+
+        <label for="bmi">BMI:</label>
+        <input type="text" id="bmi" name="bmi" required><br>
+
+        <label for="children">Number of Children:</label>
+        <input type="text" id="children" name="children" required><br>
+
+        <label for="smoker">Smoker:</label>
+        <select id="smoker" name="smoker">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="region">Region:</label>
+        <select id="region" name="region">
+            <option value="Northwest">Northwest</option>
+            <option value="Northeast">Northeast</option>
+            <option value="Southwest">Southwest</option>
+            <option value="Southeast">Southeast</option>
+        </select><br>
+
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
